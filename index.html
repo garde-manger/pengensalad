@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chun Hei Kim - Illustrator & Designer</title>
+    <style>
+        /* Font imports and base styles */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+        
+        :root {
+            --primary-color: #333333;
+            --secondary-color: #555555;
+            --accent-color: #ff5e5e;
+            --light-color: #ffebd3;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-color);
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+          /* Navigation Bar */
+          nav {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+/* Hero Section Styles */
+.hero {
+    min-height: 100vh;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    position: relative;
+    overflow: hidden;
+    margin-top: 70px;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    color: #2c3e50;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-text h1:last-child {
+    color: #e74c3c; 
+    margin-bottom: 30px;
+}
+
+.hero-text p {
+    font-size: 1.3rem;
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 90%;
+}
+
+.hire-btn {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    border: 2px solid #e74c3c;
+    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+}
+
+.hire-btn:hover {
+    background-color: transparent;
+    color: #e74c3c;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(231, 76, 60, 0.4);
+}
+
+/* Hero Section Styles */
+.hero {
+    min-height: 100vh;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    position: relative;
+    overflow: hidden;
+    margin-top: 70px;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    color: #2c3e50;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-text h1:last-child {
+    color: #e74c3c; 
+    margin-bottom: 30px;
+}
+
+.hero-text p {
+    font-size: 1.3rem;
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 90%;
+}
+
+.hire-btn {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    border: 2px solid #e74c3c;
+    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+}
+
+.hire-btn:hover {
+    background-color: transparent;
+    color: #e74c3c;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(231, 76, 60, 0.4);
+}
+
+.hero-image {
+    flex: 1;
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+    border: 5px solid white;
+    transform: perspective(1000px) rotateY(-10deg);
+}
+
+/* Decorative Elements */
+.hero::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: #fce4e1;
+    border-radius: 50%;
+    top: -100px;
+    left: -100px;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #e1f5fe;
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    bottom: -50px;
+    right: -50px;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-image img {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: auto;
+        padding: 100px 5%;
+    }
+    
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-text {
+        margin-bottom: 50px;
+    }
+    
+    .hero-text p {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .hero-image img {
+        max-width: 350px;
+        transform: none;
+    }
+    
+    .hero::before, 
+    .hero::after {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-text h1:last-child {
+        font-size: 2rem;
+    }
+    
+    .hero-text p {
+        font-size: 1.1rem;
+    }
+    
+    .hire-btn {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+    
+    .hero-image img {
+        max-width: 280px;
+    }
+}
+ 
+/* About Section Styles */
+.about {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.section-tittle {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 60px;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-tittle::after {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 3px;
+    background-color: #e74c3c;
+    bottom: -10px;
+    left: 15%;
+}
+
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h3 {
+    font-size: 2rem;
+    color: #e74c3c;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.about-image img {
+    max-width: 100%;
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border: 5px solid #f8f9fa;
+}
+
+/* Decorative Elements */
+.about::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #fce4e1;
+    border-radius: 50%;
+    top: -50px;
+    left: -50px;
+    z-index: 0;
+    opacity: 0.7;
+}
+
+.about::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: #e1f5fe;
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    bottom: -30px;
+    right: -30px;
+    z-index: 0;
+    opacity: 0.7;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .about-content {
+        gap: 30px;
+    }
+    
+    .about-image img {
+        width: 300px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 60px 20px;
+    }
+    
+    .about-content {
+        flex-direction: column-reverse;
+    }
+    
+    .about-text {
+        text-align: center;
+    }
+    
+    .about-image img {
+        width: 280px;
+        height: 380px;
+        margin-bottom: 30px;
+    }
+    
+    .section-tittle {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+    
+    .about-text h3 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-tittle {
+        font-size: 1.8rem;
+    }
+    
+    .about-text h3 {
+        font-size: 1.5rem;
+    }
+    
+    .about-image img {
+        width: 250px;
+        height: 330px;
+    }
+    
+    .about::before,
+    .about::after {
+        display: none;
+    }
+}
+
+/* Popular Menu Section Styling */
+.popular-menu {
+    padding: 80px 0;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.popular-menu::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #fce4e1;
+    border-radius: 50%;
+    top: -50px;
+    left: -50px;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 50px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.menu-item {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+}
+
+.menu-item.featured {
+    border: 2px solid #e74c3c;
+    box-shadow: 0 10px 30px rgba(231, 76, 60, 0.15);
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.menu-img {
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.menu-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+
+.menu-item:hover .menu-img img {
+    transform: scale(1.08);
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #e74c3c;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.menu-content {
+    padding: 20px;
+}
+
+.menu-content h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.menu-content p {
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.menu-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.price {
+    font-weight: 700;
+    color: #e74c3c;
+    font-size: 1.2rem;
+}
+
+.rating {
+    color: #f39c12;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.view-all-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 50px auto 0;
+    padding: 14px 32px;
+    background-color: transparent;
+    color: #e74c3c;
+    border: 2px solid #e74c3c;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.view-all-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.view-all-btn:hover {
+    background-color: #e74c3c;
+    color: white;
+    padding-right: 28px;
+    padding-left: 36px;
+}
+
+.view-all-btn:hover svg {
+    transform: translateX(4px);
+    stroke: white;
+}
+
+.view-all-btn:active {
+    transform: scale(0.96);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .popular-menu {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .menu-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-img {
+        height: 200px;
+    }
+    
+    .view-all-btn {
+        padding: 12px 28px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .popular-menu {
+        padding: 60px 0;
+    }
+    
+    .menu-img {
+        height: 200px;
+    }
+}
+
+       /* Contact Section */
+       .contact {
+            padding: 100px 50px;
+            background-color: #f5f7fa;
+        }
+        
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .contact-info {
+            flex: 1;
+            padding-right: 50px;
+        }
+        
+        .contact-info h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+       
+        .contact-info p {
+            margin-bottom: 30px;
+            color: #555;
+        }
+        
+        .contact-details {
+            margin-bottom: 30px;
+        }
+        
+        .contact-details div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .contact-details i {
+            margin-right: 15px;
+            color: #0077b6;
+            font-size: 20px;
+        }
+        
+        .contact-form {
+            flex: 1;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+/* FOOTER STYLES */
+        .footer {
+            background-color: #97caf9;
+            color: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .footer-logo {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .footer-tagline {
+            color: #4b6b81;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-logo {
+         font-size: 2rem;
+    } 
+}
+    </style>
+</head>
+<body>
+       <!-- Navigation Bar -->
+    <header> 
+        <nav>
+            <div class="container nav-container">
+                <a href="#" class="logo">&#128105;&#8205;&#127859;&#129367;</a>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Kenalan Yuk!</a></li>
+                <li><a href="#popular-menu">Salad Unggulan</a></li>
+                <li><a href="#contact">Hubungi Saya</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hi, I'm Mutiara,</h1>
+            <h1>and I'm a garde manger.</h1>
+            <p>I help clients create their perfect salad cravings, and then I make them a delicious reality.</p>
+            <a href="#contact" class="hire-btn">REACH OUT!&#128222;</a>
+            </div>
+            <div class="hero-image">
+                <img src="titii.jpg" alt="Profile Image">
+            </div>
+        </div>
+    </section>
+    <!--About Section-->
+    <section id="about" class="about">
+        <h2 class="section-tittle">Meet the Maker</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3> Mutiara Dewi Maharani</h3>
+                <p>Creative garde manger with a passion for transforming fresh ingredients into visually stunning and delicious culinary creations.</p>
+                <P>Specializing in salad artistry and cold kitchen presentations that delight both the eyes and palate.</P>
+            </div>
+            <div class="about-image">
+                <img src="tiaraa.jpg" alt="Profile">
+            </div>
+        </div>
+    </section>
+  <!-- Popular Menu Section -->
+<section id="popular-menu" class="popular-menu">
+    <div class="container">
+        <h2 class="section-title">Our Signature Creations</h2>
+        <p class="section-subtitle">Customer favorites that keep them coming back</p>
+        
+        <div class="menu-grid">
+            <!-- Menu Item 1 -->
+            <div class="menu-item">
+                <div class="menu-img">
+                    <img src="salad nicoise.jpg" alt="Nicoise Salad" loading="lazy">
+                    <div class="badge">BESTSELLER</div>
+                </div>
+                <div class="menu-content">
+                    <h3>Nicoise Salad</h3>
+                    <p>Tomatoes, hard-boiled eggs, Nicoise olives, anchovies, cucumber and olive oil</p>
+                    <div class="menu-meta">
+                        <span class="price">IDR 85.000</span>
+                        <span class="rating">★ 4.9 (120)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Menu Item 2 -->
+            <div class="menu-item featured">
+                <div class="menu-img">
+                    <img src="salad  cobb.jpg" alt="Cobb Salad" loading="lazy">
+                    <div class="badge">CHEF'S CHOICE</div>
+                </div>
+                <div class="menu-content">
+                    <h3>Cobb Salad</h3>
+                    <p>Chopped salad greens, tomato, crispy bacon, grilled or roasted chicken breast, hard-boiled eggs, avocado, chives, Roquefort cheese and red wine vinaigrette.</p>
+                    <div class="menu-meta">
+                        <span class="price">IDR 65.000</span>
+                        <span class="rating">★ 5.0 (98)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Menu Item 3 -->
+            <div class="menu-item">
+                <div class="menu-img">
+                    <img src="salad caesar.jpg" alt="Caesar Salad" loading="lazy">
+                    <div class="badge">TRENDING</div>
+                </div>
+                <div class="menu-content">
+                    <h3>Caesar Salad</h3>
+                    <p>Romaine lettuce, croutons, lemon juice, olive oil, Egg, Worcestershire sauce, anchovies, garlic, Dijon mustard, Parmesan cheese, and black pepper.</p>
+                    <div class="menu-meta">
+                        <span class="price">IDR 90.000</span>
+                        <span class="rating">★ 4.8 (156)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <a href="https://pengensalad.kesug.com/salad-lineup/" 
+           class="view-all-btn" 
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="View complete salad menu">
+            <span>Explore Full Menu</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+    </div>
+</section>      
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Let's Talk About Our Menues</h3>
+                <p>We'd love to hear from you! Reach out for reservations, catering, or just to say hello.</p>
+                <div class="contact-details">
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Jl. Salad Segar No. 123, Surabaya</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                        <span>gardemanger@gmail.com</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone"></i>
+                        <span>+6285231422748</span>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="whatsappForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+                    <button type="button" onclick="sendToWhatsApp()" class="btn">
+                        <i class="fab fa-whatsapp"></i> Kirim via WhatsApp
+                    </button>
+                </form>
+            </div>
+            
+            <script>
+                function sendToWhatsApp() {
+                    const name = document.getElementById('name').value;
+                    const message = document.getElementById('message').value;
+                    const formattedText = `Halo, my name is *${encodeURIComponent(name)}* %0A${encodeURIComponent(message)}`;
+
+                    window.open(`https://wa.me/6285231422748?text=${formattedText}`,'_blank');
+                }
+            </script>
+        </div>
+    </section>
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <h3 class="footer-logo">PengenSalad by Mutiara</h3>
+          <p class="footer-tagline">Fresh ingredients, crafted with love since 2025</p>
+        </div>
+      </div>
+    </div>
+</footer>
